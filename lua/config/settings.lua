@@ -36,3 +36,4 @@ opt.updatetime = 50
 
 opt.colorcolumn = "88"
 
+opt.wrap = false

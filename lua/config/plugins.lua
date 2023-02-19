@@ -39,12 +39,32 @@ return require("packer").startup(function(use)
   use "junegunn/limelight.vim"
 
   -- GIT --
+  -- use "tpope/vim-fugitive"
+  use "jreybert/vimagit"
 
   -- UTILS --
   -- use "norcalli/nvim_utils"
+  use "ThePrimeagen/harpoon"
   use {
       "nvim-telescope/telescope.nvim", tag = "0.1.1",
       requires = { {"nvim-lua/plenary.nvim"} }
+  }
+  use {
+      "folke/trouble.nvim",
+      requires = {
+          "nvim-tree/nvim-web-devicons",
+      },
+  }
+  use {
+      "folke/todo-comments.nvim",
+      requires = "nvim-lua/plenary.nvim",
+      -- config = function()
+      --     require("todo-comments").setup {
+      --         -- your configuration comes here
+      --         -- or leave it empty to use the default settings
+      --         -- refer to the configuration section below
+      --     }
+      -- end
   }
 
 --  use {
@@ -96,6 +116,9 @@ return require("packer").startup(function(use)
   --         "williamboman/nvim-lsp-installer",
   --     },
   -- }
+  
+  -- OTHER --
+  use "ThePrimeagen/vim-be-good"
 
   -- Automatically set up your configuration after cloning packer.nvim
   -- Put this at the end after all plugins
