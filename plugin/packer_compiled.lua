@@ -124,11 +124,6 @@ _G.packer_plugins = {
     path = "/home/arturb/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
-  harpoon = {
-    loaded = true,
-    path = "/home/arturb/.local/share/nvim/site/pack/packer/start/harpoon",
-    url = "https://github.com/ThePrimeagen/harpoon"
-  },
   ["limelight.vim"] = {
     loaded = true,
     path = "/home/arturb/.local/share/nvim/site/pack/packer/start/limelight.vim",
@@ -158,6 +153,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/arturb/.local/share/nvim/site/pack/packer/start/nightfox.nvim",
     url = "https://github.com/EdenEast/nightfox.nvim"
+  },
+  ["null-ls.nvim"] = {
+    loaded = true,
+    path = "/home/arturb/.local/share/nvim/site/pack/packer/start/null-ls.nvim",
+    url = "https://github.com/jose-elias-alvarez/null-ls.nvim"
   },
   ["nvim-autopairs"] = {
     loaded = true,
@@ -238,11 +238,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/arturb/.local/share/nvim/site/pack/packer/start/vim-surround",
     url = "https://github.com/tpope/vim-surround"
-  },
-  ["vim-toml"] = {
-    loaded = true,
-    path = "/home/arturb/.local/share/nvim/site/pack/packer/start/vim-toml",
-    url = "https://github.com/cespare/vim-toml"
   },
   vimagit = {
     loaded = true,

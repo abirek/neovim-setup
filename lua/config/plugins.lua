@@ -44,7 +44,11 @@ return require("packer").startup(function(use)
 
   -- UTILS --
   -- use "norcalli/nvim_utils"
-  use "ThePrimeagen/harpoon"
+  -- use "mhartington/formatter.nvim"
+  -- use "mfussenegger/nvim-dap"
+  use "jose-elias-alvarez/null-ls.nvim"
+  --use "ThePrimeagen/harpoon"
+  --use "dense-analysis/ale"
   use {
       "nvim-telescope/telescope.nvim", tag = "0.1.1",
       requires = { {"nvim-lua/plenary.nvim"} }
@@ -58,13 +62,6 @@ return require("packer").startup(function(use)
   use {
       "folke/todo-comments.nvim",
       requires = "nvim-lua/plenary.nvim",
-      -- config = function()
-      --     require("todo-comments").setup {
-      --         -- your configuration comes here
-      --         -- or leave it empty to use the default settings
-      --         -- refer to the configuration section below
-      --     }
-      -- end
   }
 
 --  use {
@@ -79,7 +76,7 @@ return require("packer").startup(function(use)
 --      end
 --  }
 
-  use "cespare/vim-toml"
+  -- use "cespare/vim-toml"
 
   -- LSP --
   use {
